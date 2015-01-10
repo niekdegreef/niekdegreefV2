@@ -18,8 +18,11 @@
 <link rel="image_src" href="http://niekdegreef.com/wp-content/themes/niekdegreef_v1/images/site-pic.jpg" / >
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-<script type="text/javascript" src="//use.typekit.net/mrv3afd.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+<script src="//use.typekit.net/bzc2eti.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
 
 <?php wp_head(); ?>
 </head>

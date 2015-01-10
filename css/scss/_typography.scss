@@ -2,193 +2,180 @@
 
 // gridlover for vertical rhytm, font size 16px / line-height 1,725 / scale factor 1,333 
 body {
-  font-size: 1em;
-  line-height: 1.75em;
-  margin: 0 auto; 
-  @include b-text;
+   font-size: 1em;
+   line-height: 1.6875em;
+   @include b-text;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
 	@include h-text;
 }
 h1 {
-  font-size: 2.375em;
-  line-height: 1.47368421em;
-  margin-top: 1.47368421em;
-  margin-bottom: 0.73684211em;
-  	@include breakpoint(large) { 
-		font-size: 1.75em;
-		line-height: 1em;
-		margin-top: 2em;
-		margin-bottom: 1em;
-	}
+   font-size: 2.8125em;
+   line-height: 1.2em;
+   margin-top: 1.2em;
+   margin-bottom: 0.6em;
+   color: rgba(124, 124, 124, 1);
+   padding: 0px 0%;
+   text-align: left;
+   clear: both;
 }
-.site-title{
-	margin-top: 1.3em;
-	position: relative;
-}
+
 h2 {
-	color: $grey;
-	font-size: 1.75em;
-	line-height: 1em;
-	margin-top: 2em;
-	margin-bottom: 1em;
-	@include breakpoint(large) { 
-		font-size: 1.3125em;
-		line-height: 1.333333333em;
-		margin-top: 1.33333333em;
-		margin-bottom: 1.33333333em;
-	}
+   font-size: 2em;
+   line-height: 1.6875em;
+   margin-top: 1.6875em;
+   margin-bottom: 0.84375em;
+   color: rgba(119, 119, 119, 1);
+   clear: both;
 }
 
 h3 {
-	color: $lightgrey;
-	font-size: 1.3125em;
-	line-height: 1.333333333em;
-	margin-top: 1.33333333em;
-	margin-bottom: 1.33333333em;
-	@include breakpoint(large) { 
-	  font-size: 1em;
-	  line-height: 1.75em;
-	  margin-top: 1.75em;
-	  margin-bottom: 1.75em;
-	}
+   font-size: 1.4375em;
+   line-height: 1.173913043em;
+   margin-top: 1.17391304em;
+   margin-bottom: 1.17391304em;
 }
+
 h4 {
-	  font-size: 1em;
-	  line-height: 1.75em;
-	  margin-top: 1.75em;
-	  margin-bottom: 1.75em;
+   font-size: 1em;
+   line-height: 1.6875em;
+   margin-top: 1.6875em;
+   margin-bottom: 1.6875em;
 }
-h5 {
-	font-size: 1em;
-	line-height: 1.75em;
-	margin-top: 1.33333333em;
-	margin-bottom: 1.33333333em;
-}
-p, ul, ol, pre, table, blockquote {
-  margin-top: 1.75em;
-  margin-bottom: 1.75em;
-}
-a {
-	color:darken($links,15%);
-	&:visited {
-		color:darken($links,15%);
-	}
-	&:hover {
-		color:$links;
-	}
-	&:active {
 
-	}
-	
+p {
+   margin-top: 1.6875em;
+   margin-bottom: 1.6875em;
+   color: rgba(127, 127, 127, 1);
 }
-/* Sanitation */
-hr {
-  border: 1px solid;
-  margin: -1px 0;
+
+ul {
+   margin-top: 1.6875em;
+   margin-bottom: 1.6875em;
 }
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-b, strong, em, small, code {
-  line-height: 1;
-}
-sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
-}
-sub {
-  top: 0.4em;
-}
-ul, ol{
-	list-style: none;
-	margin-left:0;
-	padding-left:0;
-	color:$text;
-	&>li {
-		margin-left:0;
-	}
-}
-ul ul, ol ol {
-	list-style: square;
-	padding-left:$gutter;
-	color:lighten($text, 20%);
-}
-ul ul ul, ol ol ol {
-	color:lighten($text, 30%);
-}
+
 ol {
-	list-style: decimal;
+   margin-top: 1.6875em;
+   margin-bottom: 1.6875em;
 }
-li > ul,
-li > ol {
 
-}
-dt {
-	font-weight: bold;
-}
-dd {
-	margin: 0 1.5em 1.5em;
-}
-b, strong {
-	font-weight: bold;
-}
-dfn, cite, em, i {
-	font-style: italic;
-}
-blockquote {
-	margin: 0 1.5em;
-	font-size: 120%;
-	color:$lightgrey;
-	font-style: italic;
-}
-address {
-	margin: $padding*2 0 1.5em;
-}
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 1.5rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
+   margin-top: 1.6875em;
+   margin-bottom: 1.6875em;
 }
-abbr, acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-mark, ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-sup, sub {
-	font-size: 75%;
-	height: 0;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-sup {
-	bottom: 1ex;
-}
-sub {
-	top: .5ex;
-}
-small {
-	font-size: 75%;
-}
-big {
-	font-size: 125%;
-}
+
 table {
-	margin: 0 0 1.5em;
-	width: 100%;
+   margin-top: 1.6875em;
+   margin-bottom: 1.6875em;
 }
-th {
-	font-weight: bold;
+
+blockquote {
+   margin-top: 1.6875em;
+   margin-bottom: 1.6875em;
+   font-family: "jaf-bernino-sans";
+   font-weight: 300;
+   font-style: italic;
+   font-size: 18px;
+   color: rgba(96, 94, 94, 1);
+   padding: 0px;
+   border-width: 0px;
+   border-style: solid;
 }
+
+hr {
+   border: 1px solid;
+   margin: -1px 0;
+}
+
+ul ul {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ol ol {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul ol {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ol ul {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+b {
+   line-height: 1;
+}
+
+strong {
+   line-height: 1;
+}
+
+em {
+   line-height: 1;
+}
+
+small {
+   line-height: 1;
+}
+
+code {
+   line-height: 1;
+}
+
+sup {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+}
+
+sub {
+   vertical-align: baseline;
+   position: relative;
+   top: 0.4em;
+}
+
+h1 a {
+}
+
+h1 a:hover {
+}
+
+h1 a:visited {
+}
+
+p a {
+}
+
+p a:hover {
+}
+
+p a:visited {
+}
+
+blockquote a {
+}
+
+blockquote a:hover {
+}
+
+blockquote a:visited {
+}
+
+h1.highlight {
+   color: rgba(51, 51, 51, 1);
+}
+
+h1.highlight a {
+}
+
+h1.highlight a:hover {
+}
+
+h1.highlight a:visited {
+}
+

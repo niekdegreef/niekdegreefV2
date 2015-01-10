@@ -1,25 +1,25 @@
 
 // Colour values & classes (used in style guide, and possibly in site)
 
-$primary: #2BBCC8; .primary {background-color: $primary; }
+$primary: #cf3a1d; .primary {background-color: $primary; }
 
-$primaryAlt: #22959e; .primaryAlt {background-color: $primaryAlt; } //(= darkened 10%)
+$primaryAlt: darken($primary , 10%); .primaryAlt {background-color: $primaryAlt; } 
 
-$secondary: #E9371A; .secondary {background-color: $secondary; }
+$secondary: #838005; .secondary {background-color: $secondary; }
 
-$secondaryAlt: #fbdad4; .secondaryAlt {background-color: $secondaryAlt; }//(= lightened 40%)
+$secondaryAlt: darken($secondary , 10%); .secondaryAlt {background-color: $secondaryAlt; }
 
 $action: $secondary; .action {background-color: $action; }
- 
-$lightergrey: #F7F7F7; .lightergrey {background-color: $lightergrey; }
 
-$lightgrey: #88898C; .lightgrey {background-color: $lightgrey; }
+$lightergrey: #cccccc; .lightergrey {background-color: $lightergrey; }
 
-$grey: #616266;  .grey {background-color: $grey; }
+$lightgrey: #999999; .lightgrey {background-color: $lightgrey; }
 
-$darkgrey: #2B2D33; .darkgrey {background-color: $darkgrey; }
+$grey: #666666;  .grey {background-color: $grey; }
 
-$black: #16100F; .black {background-color: $black; } // = darkred 
+$darkgrey: #202225; .darkgrey {background-color: $darkgrey; }
+
+$black: #000000; .black {background-color: $black; } // = darkred 
 
 $lightyellow: rgb(255, 255, 223);
 

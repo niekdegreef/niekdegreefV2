@@ -1,83 +1,13 @@
 /*--------------------------------------------------------------
 5.2 Menus - styling from underscores-theme
 --------------------------------------------------------------*/
+// @include breakpoint(large)
+
 .main-navigation {
-	@include span(6 at 4 split); 
-	position: relative;
-	top: $gutter*2.2;
-	@include h-text;
-	ul {
-		margin: 0;
-	}
-	@include breakpoint(large) { 
-		top: $gutter*1.2;
-	}
-	@include breakpoint(medium) { 
-		clear: both;
-		position: relative;
-		top: 0;
-		@include span(9); 
-	}
+
 }
 .utility {
-	@include span(12);
-	float: right;
-	text-align: right;
-	padding-top: $padding;
-	font-size: 90%;
-	ul {
-		margin:0;
-	}
-	li {
-		display: inline-block;
-		margin-left:$padding;	
-		a {
-			text-decoration: none;
-			color:$grey;
-			&:hover {
-				color:$secondary;
-				text-decoration: underline;
-			}
-		}
-		&:after {
-				margin-left:$padding;
-				content: '|';
-				@include breakpoint(small) {
-					margin-left:5px;
-				}
-		}
-		&:last-of-type:after {
-				content:'';
-				margin-right:-.5em;
-				padding-right: 0;
-		}
-	}
-	@include breakpoint(medium) { 
-		@include span(7 last);
-		font-size: 85%;
-		li a {
-			color:$lightgrey;
-		}
-	}
-	@include breakpoint(small) { 
-		@include span(7 of 12);
-		font-size: 70%;
-		float: left;
-		text-align: left;
-		margin-right: $gutter;
-		margin-bottom: $gutter;
-		padding-top:0em;
-		display: block;
-		li {
-			margin-left: 0;
-		}
-		ul {
-			//margin-left:$padding;
-		}
-		li a {
-			margin-left:0;	
-		}
-	}
+
 }
 .is_stuck .main-navigation{
 
@@ -86,35 +16,13 @@
 
 }
 .main-navigation li {
-	text-transform: uppercase;
-	font-size: 90%;
-	display: inline-block;
-	margin-left: gutter(6); //susy gutter, 25% of a 6 column-grid column = 2 x 12 column-grid gutters
-	float: left;
-	letter-spacing:1px;
-	@include breakpoint(medium) { 
-		margin-right:$gutter*.5;
-		font-size: 75%;
-		margin-left:0;
-		padding-top:.5em;
-		float: left;
-	}
-	span {
-		display: inline-block;
-		clear: both;
-		text-transform: none;
-		font-weight: 300;
-	}
+
 }
 li.current-menu-item a {
 }
 
 .main-navigation a {
-	text-decoration: none;
-	color:$grey;
-	&:hover {
-		color:$secondary;
-	}
+
 }
 .main-navigation ul ul {
 }
@@ -137,31 +45,11 @@ li.current-menu-item a {
 }
 /* Small menu */ 
 .menu-toggle {
-	cursor: pointer;
-	display: none;
-	border:none;
-	background-color: transparent;
-	height:auto;
-	position: absolute;
-	top:-3.1em;
-	right:$padding;
-	float: right;
-	font-size: 1.8em;
-	line-height: 1.2;
-	text-align: right;
-	padding-right: 5px;
-	margin-top:$gutter;
-	.genericon {
-		font-size: 32px;
-		width: 32px;
-		margin-left:$padding;
-		text-align: right;
-	}
+
 }
 @media screen and (max-width: $small) {
 	.main-navigation  {
-		position: relative;
-		width:100%;
+
 	}
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
@@ -175,29 +63,9 @@ li.current-menu-item a {
 
 }
 .toggled .menu-toggle {
-	color:$lightgrey;
 }
 .toggled ul.menu {
-	width:100%;
-	float:left;
-	margin-left:0;
-	margin-top:$gutter*2;
-	margin-bottom:$gutter;
-	padding-right: $padding;
-	li {
-		font-size: 80%;
-		width:100%;
-		border-bottom: 1px solid $lightgrey;
-		text-align: center;
-		&:hover {
-			background-color: $lightergrey;
-			color:black;
-		}
-		a {
-			width: 100%;
 
-		}
-	}
 }
 
 .quick-menu {
