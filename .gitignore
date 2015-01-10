@@ -36,3 +36,5 @@ index.php
 wp-links-opml.php
 wp-trackback.php
 wp-blog-header.php
+.codekit
+.gitignore
