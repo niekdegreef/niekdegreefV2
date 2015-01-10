@@ -36,18 +36,20 @@
 <div id="stickme" class="gradient-border"></div>
 
 	<header id="masthead" class="site-header group" role="banner">
-		<div class="site-branding">
+<!-- 	<div class="site-branding">
 			<h1 class="site-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> 
             <?php echo get_avatar( 'niekdegreef@gmail.com', '156', 'http://www.gravatar.com/avatar/385e31a964a2105956c2f26ad5d08fe2.png' ); ?>
 				</a>
 			</h1>
-		</div>
+		</div> -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		
 		</nav><!-- #site-navigation -->
+
+		<?php echo get_bloginfo ( 'description' );  ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content group">

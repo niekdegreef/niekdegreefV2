@@ -1,0 +1,19 @@
+ .patternbg:before {
+ 	width:4em;
+ 	height:20em;
+ 	content: ' ';
+ 	display: block;
+ 	background: white url(./images/pattern.svg)
+ }
+.site:before {
+	width:gutter(6);
+ 	height:10em;
+ 	content: ' ';
+	float: left;
+ 	display: block;
+ 	background: white url(./images/pattern.svg)
+}
+.bloginfo {
+	float: left;
+	margin-left: gutter(3);
+}

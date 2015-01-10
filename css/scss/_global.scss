@@ -16,14 +16,12 @@ body {
 	position: relative;
 }
 .site-header {
-	border-bottom: 1px solid $secondaryAlt;
 }
 .site-content {
-	padding-top:$gutter*2;
 	@include container($xlarge inside);
+
 	@include breakpoint(medium) { 
-		padding-top:$gutter;
-		border:none;
+
 	}
 	@include breakpoint(small) { 
 	}
@@ -60,11 +58,8 @@ section {
 }
 .site-footer {
 	clear: both;
-	margin-top: $gutter*4;
-	padding-top: $gutter*3;
 	background-color: $primary;
 	min-height:15em;
-	border-top:$padding solid $secondary;
 	@include span(12);
 }
 

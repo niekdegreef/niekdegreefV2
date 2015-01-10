@@ -8,13 +8,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main group" role="main">
-		
+
+
+		<!-- <span class="patternbg" title="decoration"></span> -->
+
 		<?php
 
 		$stickyArgs = array(
-			'posts_per_page' => 1,
+			'posts_per_page' 		=> 1,
 			'post__in'  => get_option( 'sticky_posts' ),
-			'ignore_sticky_posts' => 1
+			'ignore_sticky_posts' 	=> 1
 		);
 		$stickyPost = new WP_Query( $stickyArgs );
 

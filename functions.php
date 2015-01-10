@@ -234,7 +234,6 @@ add_action('manage_pages_custom_column', 'pages_custom_columns', 5, 2);
 function pages_columns($defaults){  
     $defaults['my_page_thumbs'] = __('Preview');  
     return $defaults;  
-
 }  
   
 function pages_custom_columns($column_name, $id){  

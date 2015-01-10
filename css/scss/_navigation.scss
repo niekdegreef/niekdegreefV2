@@ -13,18 +13,23 @@
 
 }
 .main-navigation ul {
-
+	background-color:$primary; 
+	margin-left: gutter(3);
+	width: span(9)
 }
 .main-navigation li {
-
+	padding: gutter();
+	display: inline-block;
 }
 li.current-menu-item a {
 }
 
 .main-navigation a {
-
+	color: white;
+	text-decoration: none;
 }
 .main-navigation ul ul {
+	position: absolute;
 }
 .main-navigation ul ul ul {
 }
