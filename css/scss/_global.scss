@@ -1,0 +1,90 @@
+/*clearfix*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* apply a natural box layout model to all elements */
+* { box-sizing: border-box; }
+img { width:100%} 
+
+body {
+	background-repeat: no-repeat;
+} 
+.centre-wrapper {
+	@include container($xlarge);
+	position: relative;
+}
+.site-header {
+	border-bottom: 1px solid $secondaryAlt;
+}
+.site-content {
+	padding-top:$gutter*2;
+	@include container($xlarge inside);
+	@include breakpoint(medium) { 
+		padding-top:$gutter;
+		border:none;
+	}
+	@include breakpoint(small) { 
+	}
+}
+.site-content.home{
+	border-top: none;
+}
+.content-area {
+	@include span(8);
+	@include breakpoint(medium) { 
+		clear:both;
+		@include span(12 split);
+	}
+}
+article header {
+	margin-bottom: $gutter*2;
+}
+.colOne {
+	@include span(4 of 8 after split);
+	@include breakpoint(medium) { 
+		clear:both;
+		width:100%;
+	}
+}
+.colTwo {
+	@include span(4 of 8 last);
+	@include breakpoint(medium) { 
+		clear:both;
+		width:100%;
+	}
+}
+section {
+	margin-bottom: $gutter;
+}
+.site-footer {
+	clear: both;
+	margin-top: $gutter*4;
+	padding-top: $gutter*3;
+	background-color: $primary;
+	min-height:15em;
+	border-top:$padding solid $secondary;
+	@include span(12);
+}
+
+/* Alignment */
+.centre-wrapper {
+	//@include centrethis;
+
+}
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: $gutter;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: $gutter;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}

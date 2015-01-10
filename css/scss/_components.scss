@@ -1,0 +1,86 @@
+article, aside {
+	margin-bottom: $gutter*2;
+}
+article section { 
+	&:after {
+		content: ' ';
+		display: block;
+		width: 80%;
+		// margin: 0 10%;
+		height: 0px;
+		// background-color: red;
+		text-align: center;
+		border-bottom: 1px dotted $lightgrey;
+	}
+}
+img {
+	max-width: 100%;
+	height:auto;
+}
+.entry-content > div {
+	max-width: 100%;
+}
+article.people {
+	section {
+		margin-bottom: $gutter*4;
+	}
+	h2 {
+		clear:none;
+	}
+	img {
+		float:left;
+		margin:$padding;
+		max-width: 120px;
+	}
+}
+.video_showcase li {
+	margin-bottom:$gutter*2; 
+	max-width: 100%;
+	@include breakpoint(medium) { 
+		max-width: 47.5%;
+		display: inline-block;
+		float:left;
+		&:nth-child(2n+2) {
+			float:right;
+			@include breakpoint(small) { 
+				float:left;
+		}
+	}
+}
+	@include breakpoint(small) { 
+		max-width: 100%;
+		float:left;
+	}
+}
+.logo_showcase {
+	img {
+		@include span(6 of 12 no-gutters);
+		max-width: 200px;
+
+	}
+}
+.not_selected {
+	background-color: red;
+}
+
+.accordion dt {
+	&:before {
+		margin-right: $padding;
+		@include genericons-rules;
+		content: '\f501';
+		line-height: 1.6;
+	}
+	&.ui-state-active:before {
+		content: '\f502';
+		color:darken($primary, 20%);
+	}
+}
+
+
+
+
+.ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active {
+	// background-color: red;
+	// transition:all 1s ease;
+}
+

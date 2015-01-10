@@ -1,0 +1,77 @@
+<h1>Animate.scss</h1>
+
+<p>This is a port of Dan Eden&rsquo;s <a href="http://daneden.github.io/animate.css/">Animate.css</a> for SASS.</p>
+
+<h2>Doesn&rsquo;t this already exist somewhere else?</h2>
+
+<p>Yes, there are plenty of other ports of this library. Many of them aren&rsquo;t very active projects and, honestly, I was just a little too lazy to submit my changes to those repositories.</p>
+
+<p>Also, I was looking for something a little more flexible. This version allows you to import all animations at a whopping 53kb or only import what you need. It&rsquo;s a flavor thing.</p>
+
+<h2>Installing</h2>
+
+<p>The default import includes all animations.</p>
+
+<p><code>
+@import "animate.scss";
+</code></p>
+
+<p>Want to pick and choose which animations are imported? Go into animate.scss and comment out what you don&rsquo;t need.</p>
+
+<p>```
+// Always required
+@import
+  &ldquo;_properties&rdquo;;</p>
+
+<p>// Import the animations
+@import
+  // &ldquo;<em>attention/attention.scss&rdquo;, // This will not import
+  &ldquo;</em>bouncing-entrances/bouncing-entrances.scss&rdquo;,
+  &ldquo;<em>bouncing-exits/bouncing-exits.scss&rdquo;,
+  &ldquo;</em>fading-entrances/fading-entrances.scss&rdquo;,
+  &ldquo;<em>fading-exits/fading-exits.scss&rdquo;,
+  &ldquo;</em>flippers/flippers.scss&rdquo;,
+  &ldquo;<em>lightspeed/lightspeed.scss&rdquo;,
+  &ldquo;</em>rotating-entrances/rotating-entrances.scss&rdquo;,
+  &ldquo;<em>rotating-exits/rotating-exits.scss&rdquo;,
+  &ldquo;</em>specials/specials.scss&rdquo;;
+<code>``
+You only want one of two of the animations? You can</code>@import<code>the specific partials in animate.scss instead (Example:</code>@import &ldquo;<em>attention/</em>bounce&rdquo;;`).</p>
+
+<h2>Usage</h2>
+
+<p>Once your files have been added to your project and you&rsquo;ve customized your <code>@imports</code>, you can start including the animations directly to your classes.</p>
+
+<p><code>
+.your-class-name {
+  @include bounceIn();
+}
+</code></p>
+
+<p>The mixin includes configurable options to customize the <code>delay</code>, <code>count</code> <code>duration</code>, <code>function</code> and <code>fill-mode</code> of your animations.</p>
+
+<p><code>
+.your-class-name {
+  @include bounceIn(
+    $duration: 1s,
+    $count: 2,
+    $delay: .2s,
+    $function: ease,
+    $fill: both
+  );
+}
+</code></p>
+
+<h2>Just Want the CSS?</h2>
+
+<p>You can have that too. Link up animate.css to your document <code>&lt;head&gt;</code> and add the animations like you would any class name.</p>
+
+<h2>Licenses</h2>
+
+<p>Animate.css and Animate.scss are both licensed under the MIT license. (http://opensource.org/licenses/MIT)</p>
+
+<h2>Contributing</h2>
+
+<p>Feel free to submit a pull request. I&rsquo;m open to animations not included in Animate.css. If you&rsquo;re going to submit a pull request, please match the formatting (naming convention and file structure) and include a demo of your submission on <a href="http://www.codepen.io">CodePen</a>.</p>
+
+<p>Thanks!</p>

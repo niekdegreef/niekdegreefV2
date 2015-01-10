@@ -1,0 +1,203 @@
+.contact {
+	background-color: $secondary;
+	display: inline-block;
+	text-decoration: none;
+	padding:$padding $padding*2;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	border-radius: 5px;
+    position: relative;
+    transition: none;
+   // margin-top: 1.7em;
+    // text-shadow: 0 1px 1px hsla(0,0%,24%,.7);
+	//margin: 0 .5em 1em;
+	box-shadow: inset 0 2em 0 hsla(0,0%,100%,.05),
+				inset 0 -.2em 0 hsla(0,0%,100%,.05),
+                inset 0 -.25em 0 hsla(0,0%,0%,.25),
+                0 .25em .25em hsla(0,0%,0%,.25);
+	p {
+		color:white;
+		float:none;
+		display: inline-block;
+		width:80%;
+		margin:0;
+	}
+	span {
+		color:white;
+		display: inline-block;
+		font-size: 32px;
+		float:right;
+		text-align: right;
+		width:20%;
+		bottom:$padding;
+			@include breakpoint(medium) { 
+				float:right;
+				position: relative;
+				bottom:0;
+			}
+	}
+
+	&:hover, &:focus {
+		background-color: darken($secondary , 2%);
+	    box-shadow: 
+            inset 0 -.2em 0 hsla(0,0%,100%,.1),
+            inset 0 -.25em 0 hsla(0,0%,0%,.25),
+            inset 0 2em 0 hsla(0,0%,100%,.05),
+            0 .25em .25em hsla(0,0%,0%,.25);
+	}
+	&:active {
+		background-color: darken($secondary , 4%);
+		box-shadow:
+	    //inset 0 .25em .5em hsla(0,0%,0%,.05),
+	    0 -1px 1px hsla(0,0%,0%,.1),
+	    0 1px 1px hsla(0,0%,100%,.25),
+		0 1px .1em hsla(0,0%,100%, 1),
+	    0 1px .5em hsla(0,0%,0%,.25);
+		//margin-top: 1.6em;
+		outline: none;
+		bottom: -.2em;
+		padding-bottom: .5em;
+		@include breakpoint(medium) { 
+			box-shadow: none;
+		}
+	}
+	@include breakpoint(medium) { 
+		width:60%;
+		margin:0 auto;
+		float: none;
+	}
+	@include breakpoint(small) { 
+		width:100%;
+		box-shadow: none;
+		border-radius: 0;
+	}
+}
+.full-width {
+	width: 100%;
+}
+header .contact {
+	//@include span(3 last split);
+	width: span(2 last);
+	position: absolute;
+	right: $padding;
+	bottom: $padding;
+	display: block;
+
+	&:active {
+		// top:3.8em;
+	}
+	@include breakpoint(large) { 
+		bottom:0;
+		width: span(2 last);
+		p {
+			font-size: 80%;
+		}
+	}
+	@include breakpoint(medium) { 
+		bottom: $padding;
+		width: span(3 last);
+	}
+	@include breakpoint(small) { 
+		position: absolute;
+		top:0;
+		background-color: transparent;
+		right:0;
+		margin:0;
+		bottom: auto;
+		padding: 0;
+		margin-top:0;
+		&:hover, &:active {
+			background-color: transparent;
+			box-shadow: none;
+		}
+		p {
+			display: none
+		}
+		span {
+			width:100%;
+			color:$secondary;
+			margin-right:$padding;
+		}
+	}
+}
+.contact_border {
+	border: 2px solid $secondary;
+	display: inline-block;
+	text-decoration: none;
+	padding:$padding $padding*2;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	border-radius: 5px;
+    position: relative;
+    transition: none;
+    p {
+		float:none;
+		display: inline-block;
+		width:80%;
+		margin:0;
+	}
+	span {
+		display: inline-block;
+		font-size: 32px;
+		float:right;
+		text-align: right;
+		width:20%;
+		bottom:$padding;
+			@include breakpoint(medium) { 
+				float:right;
+				position: relative;
+				bottom:0;
+			}
+	}
+	&:hover {
+		background-color: lighten($primary, 45%);
+		border-color: darken($primary, 15%);
+	}
+	&:active {
+		background-color: lighten($primary, 50%);
+		border-color: darken($primary, 25%);
+	}
+}
+header .contact_border {
+	//@include span(3 last split);
+	width: span(2 last);
+	position: absolute;
+	right: $padding;
+	bottom: $padding;
+	display: block;
+	@include breakpoint(large) { 
+		bottom:0;
+		width: span(2 last);
+		p {
+			font-size: 80%;
+		}
+	}
+	@include breakpoint(medium) { 
+		bottom: $padding;
+		width: span(4 last);
+	}
+	@include breakpoint(small) { 
+		position: absolute;
+		top:0;
+		background-color: transparent;
+		right:0;
+		margin:0;
+		bottom:auto;
+		border:none;
+		padding: 0;
+		margin-top:0;
+		&:hover, &:active {
+			background-color: transparent;
+			box-shadow: none;
+		}
+		p {
+			display: none
+		}
+		span {
+			width:100%;
+			color:$secondary;
+			//margin-right:$padding;
+		}
+	}
+}
+

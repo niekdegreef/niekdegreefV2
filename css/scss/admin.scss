@@ -1,0 +1,13 @@
+
+$primary: #7B1D41; $primaryAlt: #AA617F;
+$secondary: #00a8df; $secondaryAlt: #B2E7F8;  
+$tertiary: #f2c517; $tertiaryAlt: #f2c517;
+body.login {
+	background: $primary url(../images/login_bg.jpg)repeat-y center !important; // add pic to styles images folder
+	background-size: cover!important;
+
+}
+body.login div#login h1 a {
+	background: $secondary url(../images/login_logo.png)no-repeat center !important; // add pic to styles images folder
+	height:10em!important;
+}

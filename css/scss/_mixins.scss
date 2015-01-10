@@ -1,0 +1,57 @@
+@mixin b-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  // font-style: italic; available if needed
+} 
+@mixin h-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+} 
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) * 1px;
+    font-size: $sizeValue * 1rem;
+}
+@mixin centrethis{
+  max-width: $xlarge;
+  margin:0 auto;
+}
+@mixin genericons-rules {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Genericons';
+  text-decoration: inherit;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+}
+
+@mixin breakpoint($point) {
+  @if $point == xxlarge {
+    @media (max-width: $xxlarge) { @content; }
+  }
+  @if $point == xlarge {
+    @media (max-width: $xlarge) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: $large) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: $medium) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: $small)  { @content; }
+  }
+  @else if $point == smallest {
+    @media (max-width: $tiny)  { @content; }
+  }
+}
+/*example use:
+@include breakpoint(xlarge) { stuff here } */
+
+@mixin link-hover {
+// transition: all .2s ease-out;
+}

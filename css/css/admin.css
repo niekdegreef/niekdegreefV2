@@ -1,0 +1,7 @@
+body.login {
+  background: #7B1D41 url(../images/login_bg.jpg) repeat-y center !important;
+  background-size: cover !important; }
+
+body.login div#login h1 a {
+  background: #00a8df url(../images/login_logo.png) no-repeat center !important;
+  height: 10em !important; }

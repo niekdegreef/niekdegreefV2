@@ -1,0 +1,86 @@
+// small bits, or once-off components
+
+.banner, .header_image {
+	display: block;
+	margin-bottom: $gutter ;
+	position: relative;
+	background: $primary url(images/business_header.jpg) no-repeat center;
+	background-size: cover;
+	max-width: 100%;
+	clear:both;
+	box-shadow: inset 0px 0px 15px $grey;
+	min-height: 35em;
+	transition: min-height .25s linear;
+	@include breakpoint(large) { 
+		min-height: 30em;
+	}
+	@include breakpoint(medium) { 
+		min-height: 25em;
+	}
+	@include breakpoint(small) { 
+		min-height: 20em;
+	}
+}
+.header_image {
+	min-height: 22em;
+	@include breakpoint(large) { 
+		min-height: 20em;
+	}
+	@include breakpoint(medium) { 
+		min-height: 18em;
+	}
+	@include breakpoint(small) { 
+		min-height: 12em;
+	}
+}
+.banner_caption {	
+	display: block;
+	background-color: rgba(255, 255, 255, 0.85);
+	position: absolute;
+	left:0;
+	border-left: $padding solid $secondary;
+	max-width: 60%;
+	bottom:$gutter;
+	margin: $gutter 0;
+	box-shadow: 2px 2px 15px 0px $black;
+	@include breakpoint(medium) { 
+		max-width: 100%;
+		bottom:$gutter*0.5;
+	}
+	@include breakpoint(small) { 
+		bottom:0;
+		line-height: 1.5;
+	}
+	p {
+		padding:$gutter;
+		margin:0;
+		@include breakpoint(medium) { 
+			padding:$gutter*0.5;
+			font-size: 80%;
+		}
+	}
+}
+.header_title {
+	position: relative;
+	height:22em;
+	@include container($xlarge);
+//	float: none;
+//	@include span(12);
+	h1 {
+		color:white;
+		display: block;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.87);
+		padding: $padding;
+		position: absolute;
+		bottom: 0;	
+	}
+}
+.header_title_no_bg {
+	height:$gutter;
+	@include container($xlarge);
+}
+
+
+
+

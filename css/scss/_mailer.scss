@@ -1,0 +1,76 @@
+.mailer {
+	background-color: rgb(255, 255, 237);
+body {
+	background-color: white;
+}
+.homelink {
+	max-width: 200px;
+}
+header#masthead, .site-content, .site-footer {
+max-width: 600px;
+margin:0 auto;
+padding:0 $padding;
+}
+header#masthead, .site-content {
+	background-color: white;
+}
+img {
+	width:100%;
+}
+.content-area {
+	width:100%;
+}
+.site-content {
+	width: 100%;
+}
+.sidebar {
+	width: 100%;
+	aside {
+		margin-bottom: $gutter;
+		clear:both;
+	}
+}
+h1.site-title {
+	width:100px;
+	float:left;
+}
+.mailer-nav {
+	float:left;
+	@include h-text;
+	clear:both;
+	ul {
+	float:left;
+	margin-left: $gutter;
+
+	}
+	li {
+		display: inline-block;
+		float: left;
+		margin-right:$padding;
+	}
+	p {
+		float: left;
+	}
+}
+.logo_showcase img {
+	max-width: 150px;
+}
+address {
+	float:left;
+	text-align: left;
+}
+.homelink {
+	position: absolute;
+}
+.contact {
+	padding:$padding;
+	float:right;
+	//box-shadow: none;
+	width:300px;
+	margin-top: 20px;
+}
+.site-footer {
+	float:none;
+}
+
+}

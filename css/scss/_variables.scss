@@ -1,0 +1,59 @@
+
+// Colour values & classes (used in style guide, and possibly in site)
+
+$primary: #2BBCC8; .primary {background-color: $primary; }
+
+$primaryAlt: #22959e; .primaryAlt {background-color: $primaryAlt; } //(= darkened 10%)
+
+$secondary: #E9371A; .secondary {background-color: $secondary; }
+
+$secondaryAlt: #fbdad4; .secondaryAlt {background-color: $secondaryAlt; }//(= lightened 40%)
+
+$action: $secondary; .action {background-color: $action; }
+ 
+$lightergrey: #F7F7F7; .lightergrey {background-color: $lightergrey; }
+
+$lightgrey: #88898C; .lightgrey {background-color: $lightgrey; }
+
+$grey: #616266;  .grey {background-color: $grey; }
+
+$darkgrey: #2B2D33; .darkgrey {background-color: $darkgrey; }
+
+$black: #16100F; .black {background-color: $black; } // = darkred 
+
+$lightyellow: rgb(255, 255, 223);
+
+$shadow: $black;
+$text: $grey;
+$borderColor: $lightgrey;
+$links: $primaryAlt;
+
+// sizes:
+//http://modularscale.com/scale/?px1=16&px2=&ra1=1.618&ra2=0
+
+// Pixels	Ems	Ems @ 16	% of 13
+// 751.538	46.971	46.971	5,781.062
+// 464.486	29.03	29.03	3,572.969
+// 287.074	17.942	17.942	2,208.262
+// 177.425	11.089	11.089	1,364.808
+// 109.657	6.854	6.854	843.515
+// 67.773	4.236	4.236	521.331
+// 41.887	2.618	2.618	322.208
+// 25.888	1.618	1.618	199.138
+// 16		1		1		123.077
+// 9.889	0.618	0.618	76.069s
+// 6.112	0.382	0.382	47.015
+// 3.778	0.236	0.236	29.062
+// 2.335	0.146	0.146	17.962
+// 1.443	0.09	0.09	11.100
+
+$gutter:1.618em;
+$padding:0.618em;
+
+$tiny:22em; 			
+$small:38em;  			
+$medium:58.75em; 
+$large:68.5em; 			
+$xlarge:75.5em; 		
+	
+

@@ -1,0 +1,194 @@
+@import "genericons.scss"; @import "mixins.scss";
+
+// gridlover for vertical rhytm, font size 16px / line-height 1,725 / scale factor 1,333 
+body {
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0 auto; 
+  @include b-text;
+}
+h1, h2, h3, h4, h5, h6 {
+	@include h-text;
+}
+h1 {
+  font-size: 2.375em;
+  line-height: 1.47368421em;
+  margin-top: 1.47368421em;
+  margin-bottom: 0.73684211em;
+  	@include breakpoint(large) { 
+		font-size: 1.75em;
+		line-height: 1em;
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+}
+.site-title{
+	margin-top: 1.3em;
+	position: relative;
+}
+h2 {
+	color: $grey;
+	font-size: 1.75em;
+	line-height: 1em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	@include breakpoint(large) { 
+		font-size: 1.3125em;
+		line-height: 1.333333333em;
+		margin-top: 1.33333333em;
+		margin-bottom: 1.33333333em;
+	}
+}
+
+h3 {
+	color: $lightgrey;
+	font-size: 1.3125em;
+	line-height: 1.333333333em;
+	margin-top: 1.33333333em;
+	margin-bottom: 1.33333333em;
+	@include breakpoint(large) { 
+	  font-size: 1em;
+	  line-height: 1.75em;
+	  margin-top: 1.75em;
+	  margin-bottom: 1.75em;
+	}
+}
+h4 {
+	  font-size: 1em;
+	  line-height: 1.75em;
+	  margin-top: 1.75em;
+	  margin-bottom: 1.75em;
+}
+h5 {
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-top: 1.33333333em;
+	margin-bottom: 1.33333333em;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+}
+a {
+	color:darken($links,15%);
+	&:visited {
+		color:darken($links,15%);
+	}
+	&:hover {
+		color:$links;
+	}
+	&:active {
+
+	}
+	
+}
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
+ul, ol{
+	list-style: none;
+	margin-left:0;
+	padding-left:0;
+	color:$text;
+	&>li {
+		margin-left:0;
+	}
+}
+ul ul, ol ol {
+	list-style: square;
+	padding-left:$gutter;
+	color:lighten($text, 20%);
+}
+ul ul ul, ol ol ol {
+	color:lighten($text, 30%);
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 1.5em 1.5em;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin: 0 1.5em;
+	font-size: 120%;
+	color:$lightgrey;
+	font-style: italic;
+}
+address {
+	margin: $padding*2 0 1.5em;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup, sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+th {
+	font-weight: bold;
+}
