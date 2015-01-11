@@ -1,0 +1,44 @@
+.references {
+	margin: $gutter*2 0;
+	&:after {
+		width:gutter(12);
+	 	height:15em;
+	 	content: ' ';
+	 	position: absolute;
+	 	right:0;
+		float: right;
+	 	display: block;
+	 	opacity: .3;
+	 	background: white url(./images/pattern.svg);
+	 	clear: none;
+	}
+}
+.logos {
+	@include span(11);
+	ul {
+		list-style: none;
+		columns:2;
+		padding: 0;
+	}
+	li {
+		margin:0;
+	}
+	img {
+		margin-top:$gutter;
+		max-width: 100%;
+	}
+}
+.testimonials {
+	@include span(11);
+	blockquote {
+		clear: both;
+		font-style: italic;
+		float: left;
+		span {
+			margin-top:$gutter;
+			clear: both;
+			float:right;
+			font-style: normal;
+		}
+	}
+}

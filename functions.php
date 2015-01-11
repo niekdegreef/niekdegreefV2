@@ -239,7 +239,5 @@ function pages_columns($defaults){
 function pages_custom_columns($column_name, $id){  
     if($column_name === 'my_page_thumbs'){  
         echo the_post_thumbnail( 'admin-thumb' );  
-
     }  
-
 }

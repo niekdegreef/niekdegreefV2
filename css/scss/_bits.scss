@@ -1,13 +1,11 @@
- .patternbg:before {
- 	width:4em;
- 	height:20em;
+.patternbg:before {
  	content: ' ';
  	display: block;
  	background: white url(./images/pattern.svg)
  }
 .site:before {
 	width:gutter(6);
- 	height:10em;
+ 	height:15em;
  	content: ' ';
 	float: left;
  	display: block;

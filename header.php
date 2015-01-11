@@ -19,10 +19,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
-
 <script src="//use.typekit.net/bzc2eti.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
-
 
 <?php wp_head(); ?>
 </head>
@@ -36,20 +34,27 @@
 <div id="stickme" class="gradient-border"></div>
 
 	<header id="masthead" class="site-header group" role="banner">
-<!-- 	<div class="site-branding">
+	<!-- 	
+		<div class="site-branding">
 			<h1 class="site-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> 
-            <?php echo get_avatar( 'niekdegreef@gmail.com', '156', 'http://www.gravatar.com/avatar/385e31a964a2105956c2f26ad5d08fe2.png' ); ?>
+				<a href="<?php // echo esc_url( home_url( '/' ) ); ?>" rel="home"> 
+            <?php //echo get_avatar( 'niekdegreef@gmail.com', '156', 'http://www.gravatar.com/avatar/385e31a964a2105956c2f26ad5d08fe2.png' ); ?>
 				</a>
 			</h1>
-		</div> -->
+		</div> 
+	-->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		
 		</nav><!-- #site-navigation -->
 
-		<?php echo get_bloginfo ( 'description' );  ?>
+		<h1 class="tagline">
+			 I design websites, books and their covers for <span>journalists</span>, <span>authors</span>, <span>artists</span>, <span>academics</span> and <span>businesses</span>.
+		</h1>	
+
+		<?php // echo get_bloginfo ( 'description' );  ?>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content group">

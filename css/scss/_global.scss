@@ -6,7 +6,7 @@
 }
 /* apply a natural box layout model to all elements */
 * { box-sizing: border-box; }
-img { width:100%} 
+img { max-width:100%} 
 
 body {
 	background-repeat: no-repeat;
@@ -16,9 +16,12 @@ body {
 	position: relative;
 }
 .site-header {
+	@include container($xlarge);
+	padding:0 gutter(3);
 }
 .site-content {
-	@include container($xlarge inside);
+	@include container($xlarge);
+	padding:0 gutter(24);
 
 	@include breakpoint(medium) { 
 
@@ -30,11 +33,7 @@ body {
 	border-top: none;
 }
 .content-area {
-	@include span(8);
-	@include breakpoint(medium) { 
-		clear:both;
-		@include span(12 split);
-	}
+
 }
 article header {
 	margin-bottom: $gutter*2;
@@ -60,7 +59,7 @@ section {
 	clear: both;
 	background-color: $primary;
 	min-height:15em;
-	@include span(12);
+	@include container;
 }
 
 /* Alignment */

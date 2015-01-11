@@ -3841,28 +3841,28 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal; }
 
 h1 {
-  font-size: 2.8125em;
-  line-height: 1.2em;
-  margin-top: 1.2em;
-  margin-bottom: 0.6em;
+  font-size: 2.375em;
+  line-height: 1.421052632em;
+  margin-top: 1.42105263em;
+  margin-bottom: 0.71052632em;
   color: #7c7c7c;
   padding: 0px 0%;
   text-align: left;
   clear: both; }
 
 h2 {
-  font-size: 2em;
-  line-height: 1.6875em;
-  margin-top: 1.6875em;
-  margin-bottom: 0.84375em;
+  font-size: 1.8125em;
+  line-height: 1.862068966em;
+  margin-top: 1.86206897em;
+  margin-bottom: 0.93103448em;
   color: #777777;
   clear: both; }
 
 h3 {
-  font-size: 1.4375em;
-  line-height: 1.173913043em;
-  margin-top: 1.17391304em;
-  margin-bottom: 1.17391304em; }
+  font-size: 1.3125em;
+  line-height: 1.285714286em;
+  margin-top: 1.28571429em;
+  margin-bottom: 1.28571429em; }
 
 h4 {
   font-size: 1em;
@@ -4716,7 +4716,7 @@ table {
        box-sizing: border-box; }
 
 img {
-  width: 100%; }
+  max-width: 100%; }
 
 body {
   background-repeat: no-repeat; }
@@ -4731,10 +4731,21 @@ body {
     display: block;
     clear: both; }
 
+.site-header {
+  max-width: 75.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 8.3333333333%; }
+  .site-header:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
 .site-content {
   max-width: 75.5em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 1.0416666667%; }
   .site-content:after {
     content: " ";
     display: block;
@@ -4742,19 +4753,6 @@ body {
 
 .site-content.home {
   border-top: none; }
-
-.content-area {
-  width: 33.3333333333%;
-  float: left;
-  padding-left: 1.0416666667%;
-  padding-right: 1.0416666667%; }
-  @media (max-width: 58.75em) {
-    .content-area {
-      clear: both;
-      width: 47.9166666667%;
-      float: left;
-      margin-left: 1.0416666667%;
-      margin-right: 1.0416666667%; } }
 
 article header {
   margin-bottom: 3.236em; }
@@ -4786,10 +4784,13 @@ section {
   clear: both;
   background-color: #cf3a1d;
   min-height: 15em;
-  width: 50%;
-  float: left;
-  padding-left: 1.0416666667%;
-  padding-right: 1.0416666667%; }
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .site-footer:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
 /* Alignment */
 .alignleft {
@@ -4808,15 +4809,13 @@ section {
   margin: 0 auto; }
 
 .patternbg:before {
-  width: 4em;
-  height: 20em;
   content: ' ';
   display: block;
   background: white url(./images/pattern.svg); }
 
 .site:before {
   width: 4.1666666667%;
-  height: 10em;
+  height: 15em;
   content: ' ';
   float: left;
   display: block;
@@ -4995,7 +4994,7 @@ header .contact_border {
 --------------------------------------------------------------*/
 .main-navigation ul {
   background-color: #cf3a1d;
-  margin-left: 8.3333333333%;
+  margin-top: 0;
   width: 37.5%; }
 
 .main-navigation li {
@@ -5046,5 +5045,73 @@ header .contact_border {
 .site-title img {
   max-width: 100%; }
 
+.tagline {
+  max-width: 24em;
+  float: left;
+  clear: none;
+  margin-top: 0; }
+  .tagline:first-letter {
+    font-size: 300%;
+    line-height: .9;
+    padding-right: 10px;
+    float: left; }
+  .tagline span {
+    color: #202225; }
+  .tagline:after {
+    content: ' ';
+    display: block;
+    float: right;
+    margin: 4.1666666667%;
+    margin-right: 0;
+    width: 6em;
+    height: 3em;
+    background: url(images/signature.png) no-repeat; }
+
 figcaption h3 {
   clear: both; }
+
+.references {
+  margin: 3.236em 0; }
+  .references:after {
+    width: 2.0833333333%;
+    height: 15em;
+    content: ' ';
+    position: absolute;
+    right: 0;
+    float: right;
+    display: block;
+    opacity: .3;
+    background: white url(./images/pattern.svg);
+    clear: none; }
+
+.logos {
+  width: 45.8333333333%;
+  float: left;
+  padding-left: 1.0416666667%;
+  padding-right: 1.0416666667%; }
+  .logos ul {
+    list-style: none;
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+    padding: 0; }
+  .logos li {
+    margin: 0; }
+  .logos img {
+    margin-top: 1.618em;
+    max-width: 100%; }
+
+.testimonials {
+  width: 45.8333333333%;
+  float: left;
+  padding-left: 1.0416666667%;
+  padding-right: 1.0416666667%; }
+  .testimonials blockquote {
+    clear: both;
+    font-style: italic;
+    float: left; }
+    .testimonials blockquote span {
+      margin-top: 1.618em;
+      clear: both;
+      float: right;
+      font-style: normal; }
