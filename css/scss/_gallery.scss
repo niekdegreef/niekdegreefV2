@@ -1,0 +1,15 @@
+.grid {
+	.post {
+		display: block;
+		@include gallery(6 of 24 no-gutter);
+		@include breakpoint(large) {
+			@include gallery(8 of 24 no-gutter);
+		}
+		@include breakpoint(medium) {
+			@include gallery(12 of 24 no-gutter);
+		}
+		@include breakpoint(small) {
+			@include container(span 12 no-gutter);
+		}
+	}
+}

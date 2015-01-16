@@ -4716,7 +4716,8 @@ table {
        box-sizing: border-box; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 body {
   background-repeat: no-repeat; }
@@ -4807,6 +4808,27 @@ section {
   clear: both;
   display: block;
   margin: 0 auto; }
+
+.recentgallery {
+  margin: 6.472em 1.618em;
+  clear: both;
+  float: left; }
+  .recentgallery header {
+    margin-bottom: 0; }
+  .recentgallery h2 {
+    font-family: "jaf-bernino-sans", "helvetica-Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    text-transform: lowercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 100; }
+    .recentgallery h2 a {
+      text-decoration: none;
+      color: #999999;
+      text-align: center; }
 
 .patternbg:before {
   content: ' ';
@@ -5084,6 +5106,17 @@ figcaption h3 {
     background: white url(./images/pattern.svg);
     clear: none; }
 
+.recentgallery:before {
+  width: 2.0833333333%;
+  height: 30em;
+  content: ' ';
+  position: absolute;
+  left: 0;
+  display: block;
+  opacity: .7;
+  background: white url(./images/pattern.svg);
+  clear: none; }
+
 .logos {
   width: 45.8333333333%;
   float: left;
@@ -5115,3 +5148,63 @@ figcaption h3 {
       clear: both;
       float: right;
       font-style: normal; }
+
+.grid .post {
+  display: block;
+  width: 25%;
+  float: left; }
+  .grid .post:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both; }
+  .grid .post:nth-child(4n + 2) {
+    margin-left: 25%;
+    margin-right: -100%;
+    clear: none; }
+  .grid .post:nth-child(4n + 3) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none; }
+  .grid .post:nth-child(4n + 4) {
+    margin-left: 75%;
+    margin-right: -100%;
+    clear: none; }
+  @media (max-width: 68.5em) {
+    .grid .post {
+      width: 33.3333333333%;
+      float: left; }
+      .grid .post:nth-child(3n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both; }
+      .grid .post:nth-child(3n + 2) {
+        margin-left: 33.3333333333%;
+        margin-right: -100%;
+        clear: none; }
+      .grid .post:nth-child(3n + 3) {
+        margin-left: 66.6666666667%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (max-width: 58.75em) {
+    .grid .post {
+      width: 50%;
+      float: left; }
+      .grid .post:nth-child(2n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both; }
+      .grid .post:nth-child(2n + 2) {
+        margin-left: 50%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (max-width: 38em) {
+    .grid .post {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .grid .post:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+
+/*# sourceMappingURL=style.css.map */

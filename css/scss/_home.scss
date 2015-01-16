@@ -13,6 +13,20 @@
 	 	clear: none;
 	}
 }
+.recentgallery {
+	&:before {
+		width:gutter(12);
+	 	height:30em;
+	 	content: ' ';
+	 	position: absolute;
+	 	left:0;
+	 	display: block;
+	 	opacity: .7;
+	 	background: white url(./images/pattern.svg);
+	 	clear: none;
+	}
+}
+
 .logos {
 	@include span(11);
 	ul {

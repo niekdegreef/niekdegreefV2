@@ -1,0 +1,22 @@
+.recentgallery {
+	margin:$gutter*4 $gutter;
+	clear: both;
+	float: left;
+	header {
+		margin-bottom: 0;
+	}
+	h2 {
+		@include b-text;
+		font-size: 1em;
+		text-transform: lowercase;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-align: center;
+		font-weight: 100;
+		a {
+			text-decoration: none;
+			color:$lightgrey;
+			text-align: center;
+		}
+	}
+}

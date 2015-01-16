@@ -15,7 +15,7 @@
 				endif; 
 			?>
 		
-			<?php // tagline
+			<?php // tagline 
 				if( get_field('page_tagline') ):
 					echo '<span class="page_tagline">' , the_field('page_tagline') , '</span>';						
 				endif; 

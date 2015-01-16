@@ -20,9 +20,9 @@
 
 		<span class="page_tagline">
 			<?php // tagline
-				if( get_field('page_tagline') ):
-					echo the_field('page_tagline');						
-				endif; 
+				// if( get_field('page_tagline') ):
+				// 	echo the_field('page_tagline');	
+				// endif;
 			?>
 		</span>
 
