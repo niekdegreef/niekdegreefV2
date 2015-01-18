@@ -1,11 +1,17 @@
 .site-title img {
 	max-width: 100%;
 }
+.site-header {
+	background: white url(./images/pattern.svg);
+	background-repeat: repeat-y;
+	background-position: -14% 5%;
+	background-size: 14%;
+}
 .tagline {
 	max-width: 24em;
-	float: left;
 	clear: none;
 	margin-top:0;
+	padding:gutter(24) 0;
 	&:first-letter {
 		font-size:300%;
 		line-height:.9;
@@ -15,14 +21,11 @@
 	span {
 		color:$darkgrey;
 	}
-	&:after {
-		content: ' ';
-		display: block;
-		float: right;
-		margin:gutter(6);
-		margin-right:0;
-		width: 6em;
-		height:3em;
-		background: url(images/signature.png) no-repeat;
+	@include breakpoint(medium) { 
+		font-size: 1.8125em;
+		margin-top: 1.86206897em;
+		margin-bottom: 0.93103448em;
+		color: rgba(119, 119, 119, 1);
+		padding:0 gutter(24);
 	}
 }

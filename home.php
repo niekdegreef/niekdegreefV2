@@ -8,22 +8,31 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main group" role="main">
-
 			<div class="references group">
+				<div class="center_container">	
 				<div class="logos">
-					<p>A few clients who I enjoyed working with:</p>
+					<p>These are some of the clients who I've had the opportunity to work with:</p>
 					<ul>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uct.png" alt=""></li>
+<!-- 					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uct.png" alt=""></li>
 						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/jacana.png" alt=""></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/blacksheep.png" alt=""></li>
+						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/blacksheep.png" alt=""></li> -->
+						<li><a href="#">University of Cape Town</a></li>
+						<li><a href="#">Jacana Media</a></li>
+						<li><a href="#">Magnet Theatre</a></li>
+						<li><a href="#">GC Fires</a></li>
+						<li><a href="#">Blacksheep restaurant</a></li>
 					</ul>
 				</div>
 				<div class="testimonials">
-					<blockquote>Most awesome website, logo and corporate identiy ever, it actually brought about an entire restructure of our company. The rebranding forced us to look at what we had become over the years as a company, and the result was a renewed energy in the company and a ton of new leads, thanks!
-					<span>Important person from company x </span></blockquote>
+					<blockquote>"the book has come out and the cover looks striking. The author is delighted with it"
+					<span>Jacana Media</span></blockquote>
 					<blockquote>It's a masterpiece!
-						<span>Important person from company x </span>
+						<span>GC Fires</span>
 					</blockquote>
+					<blockquote>Just received a random call from someone saying our new website is amazing and congratulations!
+						<span>Magnet Theatre</span>
+					</blockquote>
+				</div>
 				</div>
 			</div>
 
@@ -42,14 +51,15 @@ get_header(); ?>
 		<?php if ( $homepage->have_posts() ) { ?>
 		
 		<div id="grid" class="recentgallery grid group">
-			
+			<div class="center_container">
 			<?php
-			while ( $homepage->have_posts() ) {
-				$homepage->the_post();
-				get_template_part( 'content', get_post_format() );
-			} ?>
+				while ( $homepage->have_posts() ) {
+					$homepage->the_post();
+					get_template_part( 'content', get_post_format() );
+				} ?>
+			</div>
 
-		</div>
+		</div>	
 
 		<?php
 		}
@@ -63,5 +73,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -3,13 +3,13 @@
  	display: block;
  	background: white url(./images/pattern.svg)
  }
-.site:before {
-	width:gutter(6);
- 	height:15em;
- 	content: ' ';
-	float: left;
- 	display: block;
- 	background: white url(./images/pattern.svg)
+.site:before {	// width:gutter(6);
+ // 	height:15em;
+ // 	content: ' ';
+	// float: left;
+ // 	display: block;
+ // 	background: white url(./images/pattern.svg)
+
 }
 .bloginfo {
 	float: left;

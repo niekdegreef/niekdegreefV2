@@ -1,7 +1,57 @@
+.testimonials {
+	position: relative;
+	@include span(11 last);
+	blockquote {
+		clear: both;
+		width: 100%;
+		font-style: italic;
+		float: left;
+		span {
+			margin-top:$padding;
+			clear: both;
+			float:right;
+			font-style: normal;
+		}
+		&:before {
+		content:' " ';
+		display: block;
+		float: left;
+		left: -.4em;
+		position: relative;
+		top: .4em;
+		font-size: 10em;
+		line-height: 0;
+		color: $primary;
+		}
+	}
+	@include breakpoint(small) {
+		margin-top:$gutter;
+		@include span(24);
+		blockquote {
+			padding-left: $gutter*2;
+			padding-right: $gutter*2;
+		&:before {
+			left: -70px;
+		}
+	}
+		
+	}
+}
 .recentgallery {
-	margin:$gutter*4 $gutter;
+	width:100%;
+	margin:$gutter*2 0;
+	padding:0 gutter(12);
 	clear: both;
 	float: left;
+	background: white url(./images/pattern.svg);
+	background-repeat: repeat-y;
+	background-position: -14% 5%;
+	background-size: 14%;
+	@include breakpoint(large) {
+		padding:0 gutter(6);
+		background-position: -12% 5%;
+	}
+
 	header {
 		margin-bottom: 0;
 	}
@@ -13,10 +63,39 @@
 		margin-bottom: 0;
 		text-align: center;
 		font-weight: 100;
+		position: absolute;
+		bottom: 0;
+		background: white url(./images/pattern.svg);
+		background-size: 100%;
+		//padding: $padding;
+		width: 100%;
+		opacity: 0;
 		a {
 			text-decoration: none;
-			color:$lightgrey;
+			background-color: rgba(255, 255, 255, 0.8);
+			color:$grey;
+			border:none;
+			display: block;
+			padding: $padding;
 			text-align: center;
 		}
+	}
+	figure {
+		line-height: 0;
+	}
+	.post {
+		position: relative;
+		img {
+			opacity: .9;
+		}
+		&:hover {
+		h2 {
+			opacity: 1;
+		}
+		img {
+			opacity: 1;
+			filter: blur(3px);
+		}
+	}
 	}
 }

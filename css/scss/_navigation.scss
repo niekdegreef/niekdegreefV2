@@ -4,7 +4,7 @@
 // @include breakpoint(large)
 
 .main-navigation {
-
+	// margin-left: $gutter;
 }
 .utility {
 
@@ -27,6 +27,7 @@ li.current-menu-item a {
 .main-navigation a {
 	color: white;
 	text-decoration: none;
+	border: none;
 }
 .main-navigation ul ul {
 	position: absolute;
@@ -85,7 +86,6 @@ li.current-menu-item a {
 .toplink {
 }
 .site-footer ul li a {
-	color:white
 }
 .site-main .comment-navigation,
 .site-main .paging-navigation,

@@ -47,6 +47,7 @@ p {
    margin-top: 1.6875em;
    margin-bottom: 1.6875em;
    color: rgba(127, 127, 127, 1);
+   max-width: 50em;
 }
 
 ul {
@@ -70,18 +71,25 @@ table {
 }
 
 blockquote {
-   margin-top: 1.6875em;
-   margin-bottom: 1.6875em;
+   margin:0;
+   margin-top: 0.93103448em;
+   // margin-bottom: 0.93103448em;
    font-family: "jaf-bernino-sans";
    font-weight: 300;
    font-style: italic;
-   font-size: 18px;
    color: rgba(96, 94, 94, 1);
-   padding: 0px;
+   padding: $padding;
    border-width: 0px;
    border-style: solid;
 }
-
+a, a:hover, a:visited {
+   color:$links;
+   text-decoration: none;
+   border-bottom: 1px solid ;
+}
+a:active {
+   color:$primary;
+}
 hr {
    border: 1px solid;
    margin: -1px 0;
@@ -105,6 +113,12 @@ ul ol {
 ol ul {
    margin-top: 0;
    margin-bottom: 0;
+}
+dl {
+
+}
+dt {
+
 }
 
 b {

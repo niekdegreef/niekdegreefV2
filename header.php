@@ -31,27 +31,37 @@
 <![endif]-->
 <div id="page" class="hfeed site">
 
-<div id="stickme" class="gradient-border"></div>
-
 	<header id="masthead" class="site-header group" role="banner">
-	<!-- 	
-		<div class="site-branding">
-			<h1 class="site-title">
-				<a href="<?php // echo esc_url( home_url( '/' ) ); ?>" rel="home"> 
-            <?php //echo get_avatar( 'niekdegreef@gmail.com', '156', 'http://www.gravatar.com/avatar/385e31a964a2105956c2f26ad5d08fe2.png' ); ?>
-				</a>
-			</h1>
-		</div> 
-	-->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		
-		</nav><!-- #site-navigation -->
+		<div class="center_container">	
 
-		<h1 class="tagline">
-			 I design websites, books and their covers for <span>journalists</span>, <span>authors</span>, <span>artists</span>, <span>academics</span> and <span>businesses</span>.
-		</h1>	
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+
+<?php $walker = new Menu_With_Description; ?>
+<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'walker' => $walker ) ); ?>
+
+
+
+			<?php // wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- #site-navigation -->
+
+			<?php
+			    if ( is_home() ) {
+			    ?>
+
+					<h1 class="tagline">
+						 I design websites, books and their covers for <span>journalists</span>, <span>authors</span>, <span>artists</span>, <span>academics</span> and <span>businesses</span>.
+					</h1>
+			    
+				<?php } 
+
+				else { 
+					// title?
+				}
+			?>
+
+
+		</div>	
 
 		<?php // echo get_bloginfo ( 'description' );  ?>
 

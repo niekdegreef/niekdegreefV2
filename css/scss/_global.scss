@@ -17,13 +17,16 @@ body {
 	@include container($xlarge);
 	position: relative;
 }
-.site-header {
+.site-info {
 	@include container($xlarge);
-	padding:0 gutter(3);
+		padding:0 $gutter*2;
+	@include breakpoint(medium) { 
+		padding:$gutter*2;
+	}
 }
-.site-content {
+.center_container{
 	@include container($xlarge);
-	padding:0 gutter(24);
+	padding:0 gutter(12);
 
 	@include breakpoint(medium) { 
 
@@ -31,11 +34,12 @@ body {
 	@include breakpoint(small) { 
 	}
 }
-.site-content.home{
-	border-top: none;
+.page .site-content{
+	@include container($xlarge);
+	padding:0 gutter(12);
 }
-.content-area {
-
+.page .content-area {
+	padding:0 gutter(12);
 }
 article header {
 	margin-bottom: $gutter*2;
@@ -57,13 +61,6 @@ article header {
 section {
 	margin-bottom: $gutter;
 }
-.site-footer {
-	clear: both;
-	background-color: $primary;
-	min-height:15em;
-	@include container;
-}
-
 /* Alignment */
 .centre-wrapper {
 	//@include centrethis;
