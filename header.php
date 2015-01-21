@@ -36,13 +36,8 @@
 		<div class="center_container">	
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-
-<?php $walker = new Menu_With_Description; ?>
-<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'walker' => $walker ) ); ?>
-
-
-
-			<?php // wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #site-navigation -->
 
 			<?php

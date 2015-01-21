@@ -3,11 +3,13 @@
 	background-repeat: repeat-y;
 	background-position: 105% 0%;
 	background-size: 7%;
-	// padding-left: gutter(12);
+	padding: 0 gutter(6);
 	margin: $gutter*3 auto;
 }	
 .references  .center_container {
-	padding: $gutter*2 auto;
+	padding: gutter(6);
+	border-top: 1px solid $secondary;
+	border-bottom: 1px solid $secondary;
 	&:after {
 		// width:gutter(12);
 	 // 	height:15em;

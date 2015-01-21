@@ -6,10 +6,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header group">
-		<figure><?php the_post_thumbnail( ); ?></figure>
+		
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		
-			<?php // tagline
+			<?php // website
 				if( get_field('website') ):
 					echo '<address> website: <a href="http://' , the_field('website') , '">',the_field('website') , '</a></address>' ;						
 				endif; 
@@ -24,6 +24,8 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content group">
+
+		<figure><?php //the_post_thumbnail( ); ?></figure>
 
 		<div class="para">
 			<?php the_content(); ?>

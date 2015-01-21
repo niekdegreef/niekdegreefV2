@@ -1,5 +1,5 @@
 /*clearfix*/
-.group:after {
+.group:after { 
   content: "";
   display: table;
   clear: both;
@@ -34,15 +34,27 @@ body {
 	@include breakpoint(small) { 
 	}
 }
-.page .site-content{
+.page .site-content, .single .site-content {
 	@include container($xlarge);
 	padding:0 gutter(12);
+	article {
+		padding:0 gutter(12);
+	}
 }
 .page .content-area {
 	padding:0 gutter(12);
 }
 article header {
 	margin-bottom: $gutter*2;
+}
+.para {
+	@include span(11 split no-gutter);
+}
+.para>p:first-child{
+	margin-top: 0;
+}
+.project_image_container {
+	@include span(11 last);
 }
 .colOne {
 	@include span(4 of 8 after split);

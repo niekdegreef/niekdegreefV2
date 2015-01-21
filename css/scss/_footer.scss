@@ -2,13 +2,13 @@
 	padding:gutter(12);
 	margin:gutter(12);
 	clear: both;
-	border:5px solid $black;
+	border:5px solid $secondary;
 	box-shadow: inset 0px 0px 0px 14px white, 
 				inset 0px 0px 0px 19px black;
 	min-height:15em;
-	background: white url(./images/pattern.svg);
+	background: url(./images/pattern.svg), url(./images/pattern.svg);
 	background-repeat: repeat-y;
-	background-position: right;
+	background-position: -4%, 104%;
 	background-size: 8%;
 	a {
 		border:none;
@@ -21,7 +21,7 @@
 		max-width: 80%;
 		text-align: center;
 		margin:0 auto;
-		border-bottom: 1px solid;
+		border-bottom: 1px solid $secondary;
 		font-size: 95%;
 	}
 
@@ -56,6 +56,7 @@
   animation: move_bg 4s linear 0s infinite;
 }
 .lists {
+		text-align: center;
 		display: flex;
 		flex-direction: row;
 	    flex-wrap: wrap;

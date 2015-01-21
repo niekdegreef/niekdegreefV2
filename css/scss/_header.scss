@@ -6,6 +6,7 @@
 	background-repeat: repeat-y;
 	background-position: -14% 5%;
 	background-size: 14%;
+	padding-left:gutter(6);
 }
 .tagline {
 	max-width: 24em;
@@ -20,6 +21,16 @@
 	}
 	span {
 		color:$darkgrey;
+	}
+	&:after {
+		content: ' ';
+		display: block;
+		float: right;
+		margin-top:gutter(6);
+		margin-right:0;
+		width: 6em;
+		height:3em;
+		background: url(images/signature.png) no-repeat;
 	}
 	@include breakpoint(medium) { 
 		font-size: 1.8125em;

@@ -4,7 +4,7 @@
 // @include breakpoint(large)
 
 .main-navigation {
-	// margin-left: $gutter;
+	// padding-left: gutter(24);
 }
 .utility {
 
@@ -62,7 +62,7 @@ li.current-menu-item a {
 		display: block;
 	}
 	.main-navigation ul {
-		display: none;
+display: none;
 	}
 }
 .main-navigation.toggled  {
@@ -92,6 +92,7 @@ li.current-menu-item a {
 .site-main .post-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
+	padding:0 gutter(12);
 }
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
