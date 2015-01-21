@@ -31,7 +31,7 @@ get_header(); ?>
 							$alt = $image['alt'];
 							$caption = $image['caption'];
 						
-							$size = 'large';
+							$size = 'medium';
 							$thumb = $image['sizes'][ $size ];
 							// $width = $image['sizes'][ $size . '-width' ];
 							// $height = $image['sizes'][ $size . '-height' ];
@@ -62,5 +62,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

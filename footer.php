@@ -16,21 +16,22 @@
 
 <div class="about">
     <h2>About me</h2>
-    <p>Small selection of the books I am reading, podcast &amp; music I listen to, stuff I do, people I am inspired by and admire:</p>
+    <p>Small, ever-changing and growing selection of the books I am reading, podcasts &amp; music I listen to, stuff I do, people I am inspired by and admire.</p>
+    <p class="small">None of these are sponsored or afiliate links!</p>
     <div class="lists">
     <ul>
      <li class="list_title"><h3>Listening to</h3></li>
        <li>
          <ul>
-           <li>Longform podcast</li>
-           <li>99% Invisible</li>
-           <li>Serial</li>
-           <li>ShopTalk</li>
-           <li>StartUp Podcast</li>
-           <li>Design Matters</li>
-           <li>Unfinished Business</li>
-           <li>Let's Make Mistakes</li>
-           <li>The Big Web Show</li>
+           <li><a href="http://longform.org/podcast">Longform podcast</a></li>
+           <li><a href="http://99percentinvisible.org/">99% Invisible</a></li>
+           <li><a href="http://serialpodcast.org/">Serial</a></li>
+           <li><a href="http://shoptalkshow.com/">Shopalk show</a></li>
+           <li><a href="http://gimletmedia.com/show/startup/">StartUp Podcast</a></li>
+           <li><a href="http://designobserver.com/topic/designmatters/1039">Design Matters</a></li>
+           <li><a href="http://unfinished.bz/">Unfinished Business</a></li>
+           <li><a href="http://www.muleradio.net/mistakes/">Let's Make Mistakes</a></li>
+           <li><a href="http://5by5.tv/bigwebshow">The Big Web Show</a></li>
          </ul>
        </li>
     </ul>
@@ -39,10 +40,10 @@
       <li class="list_title"><h3>Currently reading</h3></li>
        <li>
          <ul>
-           <li><a href="#">Responsible &amp; responsive webdesign</a></li>
-           <li>Thinking with Type</li>
-           <li>Designing the Editorial Experience</li>
-           <li>Responsive webdesign, 2nd edition</li>
+           <li><a href="http://www.abookapart.com/products/responsible-responsive-design">Responsible Responsive Design</a></li>
+           <li><a href="http://thinkingwithtype.com/">Thinking with Type</a></li>
+           <li><a href="http://editorialexperience.com/">Designing the Editorial Experience</a></li>
+           <li><a href="http://www.abookapart.com/products/responsive-web-design">Responsive webdesign, 2nd edition</a></li>
          </ul>
        </li>
     </ul>
@@ -51,25 +52,25 @@
       <li class="list_title"><h3>Art</h3></li>
        <li>
          <ul>
-           <li>Mark Manders</li>
-           <li>Ilya Kabakov</li>
+           <li><a href="http://www.markmanders.org/">Mark Manders</a></li>
+           <li><a href="http://www.ilya-emilia-kabakov.com/"></a>Ilya &amp; Emilia Kabakov</li>
            <li>Ethiopian miniatures</li>
            <li>Indian painting</li>
            <li>Mark Rothko</li>
-           <li>René Daniels</li>
+           <li><a href="http://renedaniels.com/">René Daniels</a></li>
          </ul>
        </li>
     </ul>
 
     <ul>   
-      <li class="list_title"><h3>Design</h3></li>
+      <li class="list_title"><h3>Design &amp; inspiration</h3></li>
        <li>
          <ul>
-           <li>Dribbble</li>
+           <li><a href="https://dribbble.com/niekdegreef">Dribbble</a></li>
            <li>Museum &amp; subway entry tickets</li>
-           <li>Editiorial design (Snowfall)</li>
-           <li></li>
-           <li></li>
+           <li><a href="http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek">Editiorial design (Snowfall, for example)</a></li>
+           <li><a href="http://httpster.net/">httpster.net</a></li>
+           <li><a href="https://en.wikipedia.org/wiki/Cape_Town">This beautiful city (Cape Town)</a></li>        
          </ul>
        </li>
     </ul>
@@ -77,11 +78,12 @@
     <ul>   <li class="list_title"><h3>Web</h3></li>
        <li>
          <ul>
-           <li>The Great Discontent</li>
-           <li>CSS Tricks</li>
-           <li>Longform</li>
+           <li><a href="http://thegreatdiscontent.com/">The Great Discontent</a></li>
+           <li><a href="http://css-tricks.com/">CSS Tricks</a></li>
+           <li><a href="http://longform.org/">Longform.org</a></li>
            <li>Twitter</li>
-           <li></li>
+           <li><a href="http://www.lynda.com/">Lynda online course</a></li>
+           <li><a href="http://alistapart.com/">A List Apart</a></li>
          </ul>
        </li>
 
@@ -90,15 +92,15 @@
     <ul>   <li class="list_title"><h3>Music</h3></li>
        <li>
          <ul>
-           <li>Ghostly Swim 2</li>
-           <li>Paul Kalkbrenner</li>
-           <li>Radio Paradise</li>
-           <li>Atoms for Peace</li>
-           <li>Boards of Canada</li>
-           <li>Rachmaninov</li>
-           <li>Bruce Springsteen</li>
-           <li>Fatboy Slim</li>
-           <li>Faithless</li>
+           <li><a href="http://www.adultswim.com/music/ghostlyswim2/">Ghostly Swim 2</a></li>
+           <li><a href="http://paulkalkbrenner.net/home/">Paul Kalkbrenner</a></li>
+           <li><a href="Radio Paradise">Radio Paradise</a></li>
+           <li><a href="http://atomsforpeace.info/">Atoms for Peace</a></li>
+           <li><a href="http://boardsofcanada.com/">Boards of Canada</a></li>
+           <li><a href="https://en.wikipedia.org/wiki/Sergei_Rachmaninoff">Rachmaninov</a></li>
+           <li><a href="https://en.wikipedia.org/wiki/Bruce_Springsteen">Bruce Springsteen</a></li>
+           <li><a href="https://en.wikipedia.org/wiki/Norman_Cook">Fatboy Slim</a></li>
+           <li><a href="https://en.wikipedia.org/wiki/Faithless">Faithless</a></li>
          </ul>
        </li>
 
@@ -108,7 +110,11 @@
        <li>
          <ul>
            <li>Run</li>
-           <li>Sew a cape onto my daughter's Frozen-outfit</li>
+           <li>Redesign this site</li>
+           <li>Fix daughter's Frozen-dress</li>
+           <li>Recharge batteries for daughter's noisy toy or talking doll</li>
+           <li>Browse through online courses &amp; Longform articles</li>
+           <li>Sleep</li>
          </ul>
        </li>
      </ul>

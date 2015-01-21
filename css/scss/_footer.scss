@@ -18,13 +18,21 @@
 		color:$grey;
 	}
 	p {
-		max-width: 80%;
+		max-width: 90%;
 		text-align: center;
 		margin:0 auto;
 		border-bottom: 1px solid $secondary;
 		font-size: 95%;
-	}
 
+	}
+	.small {
+	   font-size: 80%;
+	   font-style: italic;
+	   border:none;
+	   text-align: right;
+	   color: $lightgrey;
+	   margin-top: $padding;
+	}
 // 	animation: move_bg 3s linear 0s infinite alternate;
 
 // background: rgb(145,68,68);
