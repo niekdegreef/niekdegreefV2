@@ -34,14 +34,20 @@ body {
 	@include breakpoint(small) { 
 	}
 }
-.page .site-content, .single .site-content, .page-header {
+.page-template-default .site-content , .single .site-content {
 	@include container($xlarge);
 	padding:0 gutter(12);
 	article {
 		padding:0 gutter(12);
 	}
 }
-.page .content-area {
+
+.page-header {
+	@include container($xlarge);
+	padding:0 gutter(6);
+}
+
+.page-template-default .content-area {
 	padding:0 gutter(12);
 }
 article header {

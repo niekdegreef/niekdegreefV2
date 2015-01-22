@@ -4763,19 +4763,29 @@ body {
     display: block;
     clear: both; }
 
-.page .site-content, .single .site-content, .page-header {
+.page-template-default .site-content, .single .site-content {
   max-width: 75.5em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 2.0833333333%; }
-  .page .site-content:after, .single .site-content:after, .page-header:after {
+  .page-template-default .site-content:after, .single .site-content:after {
     content: " ";
     display: block;
     clear: both; }
-  .page .site-content article, .single .site-content article, .page-header article {
+  .page-template-default .site-content article, .single .site-content article {
     padding: 0 2.0833333333%; }
 
-.page .content-area {
+.page-header {
+  max-width: 75.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 4.1666666667%; }
+  .page-header:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.page-template-default .content-area {
   padding: 0 2.0833333333%; }
 
 article header {
@@ -4871,6 +4881,24 @@ section {
         padding-right: 3.236em; }
         .testimonials blockquote:before {
           left: -70px; } }
+  .testimonials:after {
+    content: 'arrow';
+    text-align: center;
+    color: #838005;
+    width: 3em;
+    height: 2em;
+    display: block;
+    position: relative;
+    top: 3em; }
+
+.home .recentgallery {
+  background-position: -14% 5%; }
+  @media (max-width: 68.5em) {
+    .home .recentgallery {
+      padding: 0 4.1666666667%;
+      background-position: -12% 5%; } }
+  .home .recentgallery h2 {
+    background-position: -18% 10%; }
 
 .recentgallery {
   width: 100%;
@@ -4879,12 +4907,12 @@ section {
   float: left;
   background: white url(./images/pattern.svg);
   background-repeat: repeat-y;
-  background-position: -14% 5%;
+  background-position: 114% 5%;
   background-size: 14%; }
   @media (max-width: 68.5em) {
     .recentgallery {
       padding: 0 4.1666666667%;
-      background-position: -12% 5%; } }
+      background-position: 112% 5%; } }
   .recentgallery header {
     margin-bottom: 0; }
   .recentgallery h2 {
@@ -4900,7 +4928,7 @@ section {
     bottom: 0;
     background: white url(./images/pattern.svg);
     background-repeat: repeat-y;
-    background-position: -18% 10%;
+    background-position: 118% 10%;
     background-size: 19%;
     width: 100%;
     opacity: 0;
@@ -5372,6 +5400,8 @@ figcaption h3 {
     .grid .post {
       width: 50%;
       float: left; }
+      .grid .post img {
+        width: 100%; }
       .grid .post:nth-child(2n + 1) {
         margin-left: 0;
         margin-right: -100%;

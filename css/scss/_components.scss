@@ -36,6 +36,26 @@
 	}
 		
 	}
+	&:after {
+		content:'arrow';
+		text-align: center;
+		color: $secondary;
+		width: 3em;
+		height: 2em;
+		display: block;
+		position: relative;
+		top:3em;
+	}
+}
+.home .recentgallery {
+	background-position: -14% 5%;
+	@include breakpoint(large) {
+		padding:0 gutter(6);
+		background-position: -12% 5%;
+	}
+	h2 {
+		background-position: -18% 10%;
+	}
 }
 .recentgallery {
 	width:100%;
@@ -44,11 +64,11 @@
 	float: left;
 	background: white url(./images/pattern.svg);
 	background-repeat: repeat-y;
-	background-position: -14% 5%;
+	background-position: 114% 5%;
 	background-size: 14%;
 	@include breakpoint(large) {
 		padding:0 gutter(6);
-		background-position: -12% 5%;
+		background-position: 112% 5%;
 	}
 
 	header {
@@ -66,7 +86,7 @@
 		bottom: 0;
 		background: white url(./images/pattern.svg);
 		background-repeat: repeat-y;
-		background-position: -18% 10%;
+		background-position: 118% 10%;
 		background-size: 19%;
 		//padding: $padding;
 		width: 100%;

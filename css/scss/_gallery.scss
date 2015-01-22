@@ -6,6 +6,7 @@
 			@include gallery(8 of 24 no-gutter);
 		}
 		@include breakpoint(medium) {
+			img {width:100%}
 			@include gallery(12 of 24 no-gutter);
 		}
 		@include breakpoint(small) {

@@ -54,7 +54,7 @@
          <ul>
            <li><a href="http://www.markmanders.org/">Mark Manders</a></li>
            <li><a href="http://www.ilya-emilia-kabakov.com/"></a>Ilya &amp; Emilia Kabakov</li>
-           <li>Ethiopian miniatures</li>
+           <li><a href="https://en.wikipedia.org/wiki/Jean-Baptiste-Camille_Corot">Camille Corot</a></li>
            <li>Indian painting</li>
            <li>Mark Rothko</li>
            <li><a href="http://renedaniels.com/">René Daniels</a></li>
@@ -106,6 +106,7 @@
 
      </ul>
 
+     <!-- 
      <ul>   <li class="list_title"><h3>In my spare time</h3></li>
        <li>
          <ul>
@@ -117,7 +118,7 @@
            <li>Sleep</li>
          </ul>
        </li>
-     </ul>
+     </ul> -->
 
      </div>
     </div>

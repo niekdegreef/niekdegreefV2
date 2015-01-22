@@ -46,23 +46,7 @@ get_header(); ?>
 					if ( ! empty( $term_description ) ) :
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
-				?><p>Work done for
-				<?php
-				if ( is_tax( 'client' )  ) {
-					// this gets the client name
-					$taxonomy = 'client';
-					$queried_term = get_query_var($taxonomy);
-					$terms = get_terms($taxonomy, 'slug='.$queried_term);
-					if ($terms) {
-					  foreach($terms as $term) {
-					  	echo $term->name . ':' ;
-					  }
-
-					}
-				} 
-			
 				?>
-				</p>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

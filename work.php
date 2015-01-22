@@ -7,60 +7,46 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
 		<main id="main" class="site-main group" role="main">
+<header class="page-header">
+	<h1 class="page-title">
+		Portfolio
+	</h1>
+</header>
 
-<!-- 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
- -->
-		<figure><?php the_post_thumbnail( ); ?></figure>
+		<?php
 
-			<div id="grid">
-				<?php while ( have_posts() ) : the_post(); ?>
+		$work = array (
+				'posts_per_page' => 30,
+		);
 
-					<?php // the_content(); ?>
+		// The Query
+		$showwork = new WP_Query( $work );
 
-					<?php 
-					
-					if( get_field('subitem') ): ?>
-													
-							<?php while( has_sub_field('subitem') ): 
-							$image = get_sub_field('image');
+		if ( $showwork->have_posts() ) { ?>
+		
+		<div id="grid" class="recentgallery grid group">
+			<div class="center_container">
+			<?php
+				while ( $showwork->have_posts() ) {
+					$showwork->the_post();
+					get_template_part( 'content', get_post_format() );
+				} ?>
+			</div>
 
-							$url = $image['url'];
-							$title = $image['title'];
-							$alt = $image['alt'];
-							$caption = $image['caption'];
-						
-							$size = 'medium';
-							$thumb = $image['sizes'][ $size ];
-							// $width = $image['sizes'][ $size . '-width' ];
-							// $height = $image['sizes'][ $size . '-height' ];
-							?>	
-							
-							<article class="post">
-							<!-- 	<img src="<?php
-								$image = get_sub_field('image');
-								echo $image ?>" /> -->
-<figure>
-				<a href="<?php the_sub_field('link'); ?>"><img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" /></a>
-</figure>
-								<h2><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></h2>
+		</div>	
 
-								<p class="blurb"><?php the_sub_field('blurb'); ?></p>
-
-<!-- 								<a href="<?php the_field('link'); ?>"><?php the_sub_field('title'); ?></a>
- -->
- 							</article>
-
-					<?php endwhile; ?>
-										
-				<?php endif; ?>
-
-			<?php endwhile; // end of the loop. ?>
-		</div>
+		<?php
+		}
+		else {
+			// no posts found
+		}
+		// Restore original Post Data
+		wp_reset_postdata();
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php //get_sidebar(); ?>
 <?php get_footer(); ?>
