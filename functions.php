@@ -213,7 +213,6 @@ function custom_post_type_blogs() {
 // Hook into the 'init' action
 add_action( 'init', 'custom_post_type_blogs', 0 );
 
-
 // Replace Posts label to Work in Admin Panel 
 
 function change_post_menu_label() {
@@ -240,6 +239,41 @@ function change_post_object_label() {
 }
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
+
+// Register Custom Taxonomy
+function custom_taxonomy_client() {
+
+	$labels = array(
+		'name'                       => _x( 'Clients', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Client', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Client', 'text_domain' ),
+		'all_items'                  => __( 'All Clients', 'text_domain' ),
+		'parent_item'                => __( 'Parent Client', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Client:', 'text_domain' ),
+		'new_item_name'              => __( 'New Client Name', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Client', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Client', 'text_domain' ),
+		'update_item'                => __( 'Update Client', 'text_domain' ),
+		'separate_items_with_commas' => __( 'Separate Clients with commas', 'text_domain' ),
+		'search_items'               => __( 'Search client', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove client', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Choose from the most used clients', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'client', array( 'post' ), $args );
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'custom_taxonomy_client', 0 );
 
 // Image sizes
 if ( function_exists( 'add_image_size' ) ) { 

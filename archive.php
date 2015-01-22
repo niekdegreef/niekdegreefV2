@@ -10,64 +10,36 @@
 get_header(); ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main group" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<h1 class="page-title">
 					<?php
-						if ( is_category() ) :
-							single_cat_title();
+							if ( is_category() ) {
+								printf( __( 'Category Archives: %s', 'beyerdegreef' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
-						elseif ( is_tag() ) :
-							single_tag_title();
+							} 
+							elseif ( is_tax( 'client' )  ) {
+									 // this gets the client name
+										$taxonomy = 'client';
+										$queried_term = get_query_var($taxonomy);
+										$terms = get_terms($taxonomy, 'slug='.$queried_term);
+										if ($terms) {
+										  foreach($terms as $term) {
+										  	echo '<a href="'.get_term_link($term->slug, $taxonomy).'">'.$term->name.'</a>';
+										  }
+									
+										}
+							} 
+							else {
+								_e( 'Archives', 'beyerdegreef' );
 
-						elseif ( is_author() ) :
-							printf( __( 'Author: %s', 'niek' ), '<span class="vcard">' . get_the_author() . '</span>' );
-
-						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'niek' ), '<span>' . get_the_date() . '</span>' );
-
-						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'niek' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'niek' ) ) . '</span>' );
-
-						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'niek' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'niek' ) ) . '</span>' );
-
-						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'niek' );
-
-						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-							_e( 'Galleries', 'niek');
-
-						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'niek');
-
-						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', 'niek' );
-
-						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'niek' );
-
-						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', 'niek' );
-
-						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
-							_e( 'Statuses', 'niek' );
-
-						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							_e( 'Audios', 'niek' );
-
-						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
-							_e( 'Chats', 'niek' );
-
-						else :
-							_e( 'Archives', 'niek' );
-
-						endif;
-					?>
+							}
+						?>
 				</h1>
+
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
@@ -77,7 +49,13 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+
+
 			<?php /* Start the Loop */ ?>
+
+			<div id="grid" class="recentgallery grid group">
+			<div class="center_container">
+			
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
@@ -89,7 +67,10 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-
+		
+			</div>
+			</div>	
+	
 			<?php niek_paging_nav(); ?>
 
 		<?php else : ?>

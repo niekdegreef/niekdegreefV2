@@ -12,16 +12,22 @@ get_header(); ?>
 				<div class="center_container">	
 				<div class="logos">
 					<p>These are some of the clients who I've had the opportunity to work with:</p>
+
 					<ul>
-<!-- 					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uct.png" alt=""></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/jacana.png" alt=""></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/blacksheep.png" alt=""></li> -->
-						<li><a href="#">University of Cape Town</a></li>
-						<li><a href="#">Jacana Media</a></li>
-						<li><a href="#">Magnet Theatre</a></li>
-						<li><a href="#">GC Fires</a></li>
-						<li><a href="#">Blacksheep restaurant</a></li>
-					</ul>
+						<?php 
+			            $terms = get_terms('client' , array (
+			                'parent' => '30', // featured clients ONLY! .. remote, 30 local
+			            ) );
+
+			            $count = count($terms);
+			            if ( $count > 0 ){
+			                foreach ( $terms as $term ) {
+			                echo '<li><a href="' . esc_url( home_url() ) . '/client/' . $term->slug . ' ">' . $term->name . '</a></li>';
+			                }
+			            }
+			            ?>
+			        </ul>
+
 				</div>
 				<div class="testimonials">
 					<blockquote>"the book has come out and the cover looks striking. The author is delighted with it"
