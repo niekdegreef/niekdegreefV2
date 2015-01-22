@@ -16,7 +16,7 @@ get_header(); ?>
 					<ul>
 						<?php 
 			            $terms = get_terms('client' , array (
-			                'parent' => '30', // featured clients ONLY! .. remote, 30 local
+			                'parent' => '30', // featured clients ONLY! 17 remote, 30 local
 			            ) );
 
 			            $count = count($terms);
