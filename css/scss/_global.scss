@@ -34,7 +34,7 @@ body {
 	@include breakpoint(small) { 
 	}
 }
-.page .site-content, .single .site-content {
+.page .site-content, .single .site-content, .page-header {
 	@include container($xlarge);
 	padding:0 gutter(12);
 	article {

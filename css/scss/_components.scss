@@ -40,7 +40,6 @@
 .recentgallery {
 	width:100%;
 	margin:$gutter*2 0;
-	padding:0 gutter(12);
 	clear: both;
 	float: left;
 	background: white url(./images/pattern.svg);
@@ -72,6 +71,7 @@
 		//padding: $padding;
 		width: 100%;
 		opacity: 0;
+		z-index: 100;
 		a {
 			text-decoration: none;
 			color:$grey;
@@ -103,5 +103,8 @@
 			transition: all .2s ;
 		}
 	}
+	}
+	.center_container {
+		padding:0 gutter(6);
 	}
 }

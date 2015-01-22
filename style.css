@@ -4763,16 +4763,16 @@ body {
     display: block;
     clear: both; }
 
-.page .site-content, .single .site-content {
+.page .site-content, .single .site-content, .page-header {
   max-width: 75.5em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 2.0833333333%; }
-  .page .site-content:after, .single .site-content:after {
+  .page .site-content:after, .single .site-content:after, .page-header:after {
     content: " ";
     display: block;
     clear: both; }
-  .page .site-content article, .single .site-content article {
+  .page .site-content article, .single .site-content article, .page-header article {
     padding: 0 2.0833333333%; }
 
 .page .content-area {
@@ -4875,7 +4875,6 @@ section {
 .recentgallery {
   width: 100%;
   margin: 3.236em 0;
-  padding: 0 2.0833333333%;
   clear: both;
   float: left;
   background: white url(./images/pattern.svg);
@@ -4904,7 +4903,8 @@ section {
     background-position: -18% 10%;
     background-size: 19%;
     width: 100%;
-    opacity: 0; }
+    opacity: 0;
+    z-index: 100; }
     .recentgallery h2 a {
       text-decoration: none;
       color: #666666;
@@ -4929,6 +4929,8 @@ section {
               filter: brightness(40%);
       -webkit-transition: all 0.2s;
               transition: all 0.2s; }
+  .recentgallery .center_container {
+    padding: 0 4.1666666667%; }
 
 .patternbg:before {
   content: ' ';

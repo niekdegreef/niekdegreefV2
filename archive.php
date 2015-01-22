@@ -28,7 +28,7 @@ get_header(); ?>
 										$terms = get_terms($taxonomy, 'slug='.$queried_term);
 										if ($terms) {
 										  foreach($terms as $term) {
-										  	echo '<a href="'.get_term_link($term->slug, $taxonomy).'">'.$term->name.'</a>';
+										  	echo $term->name;
 										  }
 									
 										}
@@ -46,23 +46,34 @@ get_header(); ?>
 					if ( ! empty( $term_description ) ) :
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
+				?><p>Work done for
+				<?php
+				if ( is_tax( 'client' )  ) {
+					// this gets the client name
+					$taxonomy = 'client';
+					$queried_term = get_query_var($taxonomy);
+					$terms = get_terms($taxonomy, 'slug='.$queried_term);
+					if ($terms) {
+					  foreach($terms as $term) {
+					  	echo $term->name . ':' ;
+					  }
+
+					}
+				} 
+			
 				?>
+				</p>
 			</header><!-- .page-header -->
-
-
 
 			<?php /* Start the Loop */ ?>
 
 			<div id="grid" class="recentgallery grid group">
 			<div class="center_container">
+				
 			
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
 					get_template_part( 'content', get_post_format() );
 				?>
 
