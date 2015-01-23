@@ -121,7 +121,8 @@
 		position: relative;
 		img {
 			// opacity: .9;
-			filter: brightness(90%);
+			// filter: brightness(90%);
+			filter: saturate(50%);
 		}
 		&:hover {
 		h2 {
@@ -132,6 +133,7 @@
 			opacity: 1;
 			//filter: blur(3px);
 			filter: brightness(40%);
+			filter: saturate(100%);
 			transition: all .2s ;
 		}
 	}

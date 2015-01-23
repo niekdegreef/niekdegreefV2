@@ -4972,8 +4972,8 @@ section {
   .recentgallery .post {
     position: relative; }
     .recentgallery .post img {
-      -webkit-filter: brightness(90%);
-              filter: brightness(90%); }
+      -webkit-filter: saturate(50%);
+              filter: saturate(50%); }
     .recentgallery .post:hover h2 {
       opacity: 1;
       -webkit-transition: all 0.4s;
@@ -4982,11 +4982,16 @@ section {
       opacity: 1;
       -webkit-filter: brightness(40%);
               filter: brightness(40%);
+      -webkit-filter: saturate(100%);
+              filter: saturate(100%);
       -webkit-transition: all 0.2s;
               transition: all 0.2s; }
   .recentgallery .center_container {
     padding: 0 4.1666666667%;
     position: relative; }
+
+.no-touch .recentgallery h2 {
+  opacity: 1; }
 
 .patternbg:before {
   content: ' ';
@@ -5256,6 +5261,7 @@ header .contact_border {
 .site-footer {
   padding: 2.0833333333%;
   margin: 2.0833333333%;
+  margin-top: 4.1666666667%;
   clear: both;
   border: 5px solid #838005;
   box-shadow: inset 0px 0px 0px 14px white,  inset 0px 0px 0px 19px black;
