@@ -4881,15 +4881,42 @@ section {
         padding-right: 3.236em; }
         .testimonials blockquote:before {
           left: -70px; } }
-  .testimonials:after {
-    content: 'arrow';
-    text-align: center;
-    color: #838005;
-    width: 3em;
-    height: 2em;
-    display: block;
-    position: relative;
-    top: 3em; }
+
+.references .center_container:after {
+  content: ' ';
+  display: block;
+  text-align: center;
+  color: #838005;
+  text-align: center;
+  position: relative;
+  bottom: -5em;
+  width: 0;
+  height: 0;
+  border-left: 1.4em solid transparent;
+  border-right: 1.4em solid transparent;
+  border-top: 2em solid #838005;
+  margin: 0 auto;
+  -webkit-animation-name: bounceInUp;
+  -ms-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 .home .recentgallery {
   background-position: -14% 5%; }
@@ -4958,7 +4985,8 @@ section {
       -webkit-transition: all 0.2s;
               transition: all 0.2s; }
   .recentgallery .center_container {
-    padding: 0 4.1666666667%; }
+    padding: 0 4.1666666667%;
+    position: relative; }
 
 .patternbg:before {
   content: ' ';
@@ -5194,19 +5222,21 @@ header .contact_border {
   background-position: -14% 5%;
   background-size: 14%;
   padding-left: 4.1666666667%; }
+  @media (max-width: 58.75em) {
+    .site-header {
+      padding-left: 2.0833333333%; } }
 
 .tagline {
   max-width: 24em;
   clear: none;
+  color: #202225;
   margin-top: 0;
   padding: 1.0416666667% 0; }
   .tagline:first-letter {
-    font-size: 300%;
-    line-height: .9;
+    font-size: 291%;
+    line-height: 96%;
     padding-right: 10px;
     float: left; }
-  .tagline span {
-    color: #202225; }
   .tagline:after {
     content: ' ';
     display: block;
@@ -5221,7 +5251,6 @@ header .contact_border {
       font-size: 1.8125em;
       margin-top: 1.86206897em;
       margin-bottom: 0.93103448em;
-      color: #777777;
       padding: 0 1.0416666667%; } }
 
 .site-footer {
@@ -5241,7 +5270,7 @@ header .contact_border {
     text-align: center;
     color: #666666; }
   .site-footer p {
-    max-width: 90%;
+    max-width: 65%;
     text-align: center;
     margin: 0 auto;
     border-bottom: 1px solid #838005;

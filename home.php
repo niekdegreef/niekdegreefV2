@@ -9,7 +9,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main group" role="main">
 			<div class="references group">
-				<div class="center_container">	
+				<div class="center_container group">	
 				<div class="logos">
 					<p>These are some of the clients who I've had the opportunity to work with:</p>
 

@@ -36,15 +36,27 @@
 	}
 		
 	}
+}
+.references .center_container {
 	&:after {
-		content:'arrow';
+		content:' ';
+		display: block;
 		text-align: center;
 		color: $secondary;
-		width: 3em;
-		height: 2em;
-		display: block;
+		text-align: center;
 		position: relative;
-		top:3em;
+		bottom:-5em;
+		width: 0;
+		height: 0;
+		border-left: 1.4em solid transparent;
+		border-right: 1.4em solid transparent;
+		border-top: 2em solid $secondary;
+		margin: 0 auto;
+		@include bounceInUp(
+			$count: 1,
+			$duration: 2s
+			);
+
 	}
 }
 .home .recentgallery {
@@ -126,5 +138,6 @@
 	}
 	.center_container {
 		padding:0 gutter(6);
+		position: relative;
 	}
 }

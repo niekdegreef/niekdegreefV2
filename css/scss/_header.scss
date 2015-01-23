@@ -7,20 +7,24 @@
 	background-position: -14% 5%;
 	background-size: 14%;
 	padding-left:gutter(6);
+	@include breakpoint(medium) {
+		padding-left:gutter(12);
+	}
 }
 .tagline {
 	max-width: 24em;
 	clear: none;
+	color:$darkgrey;
 	margin-top:0;
 	padding:gutter(24) 0;
 	&:first-letter {
-		font-size:300%;
-		line-height:.9;
-		padding-right:10px; 
+		font-size: 291%;
+		line-height: 96%;
+		padding-right: 10px;
 		float: left;
 	}
 	span {
-		color:$darkgrey;
+		
 	}
 	&:after {
 		content: ' ';
@@ -36,7 +40,6 @@
 		font-size: 1.8125em;
 		margin-top: 1.86206897em;
 		margin-bottom: 0.93103448em;
-		color: rgba(119, 119, 119, 1);
 		padding:0 gutter(24);
 	}
 }

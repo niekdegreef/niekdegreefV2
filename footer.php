@@ -26,7 +26,7 @@
            <li><a href="http://longform.org/podcast">Longform podcast</a></li>
            <li><a href="http://99percentinvisible.org/">99% Invisible</a></li>
            <li><a href="http://serialpodcast.org/">Serial</a></li>
-           <li><a href="http://shoptalkshow.com/">Shopalk show</a></li>
+           <li><a href="http://shoptalkshow.com/">Shoptalk show</a></li>
            <li><a href="http://gimletmedia.com/show/startup/">StartUp Podcast</a></li>
            <li><a href="http://designobserver.com/topic/designmatters/1039">Design Matters</a></li>
            <li><a href="http://unfinished.bz/">Unfinished Business</a></li>
@@ -55,7 +55,7 @@
            <li><a href="http://www.markmanders.org/">Mark Manders</a></li>
            <li><a href="http://www.ilya-emilia-kabakov.com/"></a>Ilya &amp; Emilia Kabakov</li>
            <li><a href="https://en.wikipedia.org/wiki/Jean-Baptiste-Camille_Corot">Camille Corot</a></li>
-           <li>Indian painting</li>
+           <!-- <li>Indian painting</li> -->
            <li>Mark Rothko</li>
            <li><a href="http://renedaniels.com/">René Daniels</a></li>
          </ul>
@@ -67,7 +67,7 @@
        <li>
          <ul>
            <li><a href="https://dribbble.com/niekdegreef">Dribbble</a></li>
-           <li>Museum &amp; subway entry tickets</li>
+           <!-- <li>Museum &amp; subway entry tickets</li> -->
            <li><a href="http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek">Editiorial design (Snowfall, for example)</a></li>
            <li><a href="http://httpster.net/">httpster.net</a></li>
            <li><a href="https://en.wikipedia.org/wiki/Cape_Town">This beautiful city (Cape Town)</a></li>        
@@ -81,8 +81,8 @@
            <li><a href="http://thegreatdiscontent.com/">The Great Discontent</a></li>
            <li><a href="http://css-tricks.com/">CSS Tricks</a></li>
            <li><a href="http://longform.org/">Longform.org</a></li>
-           <li>Twitter</li>
-           <li><a href="http://www.lynda.com/">Lynda online course</a></li>
+           <li><a href="https://twitter.com/niekdegreef">Twitter</a></li>
+           <li><a href="http://www.lynda.com/">Lynda</a></li>
            <li><a href="http://alistapart.com/">A List Apart</a></li>
          </ul>
        </li>
